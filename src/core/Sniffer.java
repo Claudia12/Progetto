@@ -94,7 +94,7 @@ public class Sniffer
 				if(connessioni.contains(tmp))
 				{
 					int pos=connessioni.indexOf(tmp);
-					//System.out.println("Connessioni size c'è "+connessioni.size());
+					System.out.println("Connessioni prensente : connessioni totali "+connessioni.size());
 					connessioni.get(pos).setChanged(true, tcpPacket);
 					//System.out.println("c'è");
 //					if((tmp.getAB().getA().getHostname().equals(srcHost)) && (tmp.getAB().getB().getHostname().equals(dstHost)) && (tmp.getAB().getPortaSorgente()==srcPort) && (tmp.getAB().getPortaDestinazione()==dstPort) )//vuol dire che il flusso che mi interesa è AB
