@@ -53,31 +53,34 @@ public class Printer implements Observer {
 		o.print(f.getA().getHostname()+" - "+f.getB().getHostname()+" - "+f.getPortaSorgente()+" - "+f.getPortaDestinazione());
 		o.println();
 		o.flush();
-		Iterator it =f.getNumberSequenceList().entrySet().iterator();
-		 while (it.hasNext()) {
-		    Map.Entry entry = (Map.Entry)it.next();
-		    // Stampa a schermo la coppia chiave-valore;
-		    o.print("Key = " + entry.getKey());
-		    o.print(" Value = " + entry.getValue());
-		    o.println();
-			o.flush();
-		    }
-		  
-		 for(Long rto:f.getRtoList())
-		 {
-			 	o.print("rto = " + rto);
-			    o.println();
-				o.flush();
-		
-		 }
-		 
-		  for(Integer i:f.getByteSec())
-		  {
-			  	o.print("byte/sec = " + i);
-			    o.println();
-				o.flush();
-			      
-		  }
-	
+		o.print("size map "+f.getNumberSequenceList().size());
+		o.println();
+		o.flush();
+//		Iterator it =f.getNumberSequenceList().entrySet().iterator();
+//		 while (it.hasNext()) {
+//		    Map.Entry entry = (Map.Entry)it.next();
+//		    // Stampa a schermo la coppia chiave-valore;
+//		    o.print("Key = " + entry.getKey());
+//		    o.print(" Value = " + entry.getValue());
+//		    o.println();
+//			o.flush();
+//		    }
+//		  
+//		 for(Long rto:f.getRtoList())
+//		 {
+//			 	o.print("rto = " + rto);
+//			    o.println();
+//				o.flush();
+//		
+//		 }
+//		 
+//		  for(Integer i:f.getByteSec())
+//		  {
+//			  	o.print("byte/sec = " + i);
+//			    o.println();
+//				o.flush();
+//			      
+//		  }
+//	
 	}
 }

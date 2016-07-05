@@ -21,9 +21,9 @@ public class Connessione extends Observable
 	public Connessione(Flusso aB, Flusso bA) 
 	{
 		
-		AB = aB;
-		BA = bA;
-		indicatori.add(new IndicatoreTOTByte());
+		this.AB = aB;
+		this.BA = bA;
+		//indicatori.add(new IndicatoreTOTByte());
 		indicatori.add(new IndicatoreRTO());
 		indicatori.add(new Printer());
 	//	indicatori.add(new IndicatoreRTT());

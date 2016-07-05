@@ -38,8 +38,8 @@ public class IndicatoreRTO implements Observer {
 		}
 		
 		
-		System.out.println("list sequence number ab dopo "+connessioneDaControllare.getAB().getNumberSequenceList().size());
-		System.out.println("list sequence number ba dopo "+connessioneDaControllare.getBA().getNumberSequenceList().size());
+		//System.out.println("list sequence number ab dopo "+connessioneDaControllare.getAB().getNumberSequenceList().size());
+		//System.out.println("list sequence number ba dopo "+connessioneDaControllare.getBA().getNumberSequenceList().size());
 	
 	}
 

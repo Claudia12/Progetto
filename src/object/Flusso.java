@@ -24,6 +24,7 @@ public class Flusso
 	private Integer totByte;
 	private List<Integer> byteSec= new ArrayList<Integer>();
 	private int contatore=0;
+	private int numeroPacchettiTotali;
 	
 	
 	
@@ -34,6 +35,7 @@ public class Flusso
 		portaSorgente=ps;
 		portaDestinazione=pd;
 		totByte=0;
+		numeroPacchettiTotali=0;
 		creaTimer();
 	}
 
@@ -159,7 +161,7 @@ public class Flusso
 		}
 		else
 		{
-			//System.out.println("difficilmente entro qui");
+			
 			byteSec.add(totByte);
 		}
 		
