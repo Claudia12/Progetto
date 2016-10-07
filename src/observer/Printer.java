@@ -114,14 +114,14 @@ public class Printer implements Observer {
 
 		}
 
-		System.out.println("size ackricevuti list : "+f.getPacchettiDiCuiHoRicevutoACK().size());
-		for(Long ack:f.getPacchettiDiCuiHoRicevutoACK())
-		{
-			o.print("numberSequenceDiCuiHoRicevutoACK = " + ack);
-			o.println();
-			o.flush();
-
-		}
+//		System.out.println("size ackricevuti list : "+f.getPacchettiDiCuiHoRicevutoACK().size());
+//		for(Long ack:f.getPacchettiDiCuiHoRicevutoACK())
+//		{
+//			o.print("numberSequenceDiCuiHoRicevutoACK = " + ack);
+//			o.println();
+//			o.flush();
+//
+//		}
 		//			System.out.println("size byte/sec list : "+f.getByteSec().size());
 		//		  for(Integer i:f.getByteSec())
 		//		  {

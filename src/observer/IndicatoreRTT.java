@@ -62,7 +62,7 @@ public class IndicatoreRTT implements Observer{
 			System.out.println("totole : "+tempoArrivo);
 			 long rtt=tempoArrivo-f.getNumberSequenceMap().get(p.getAcknowledgementNumber());
 			 f.getRttList().add(rtt);
-			 f.getPacchettiDiCuiHoRicevutoACK().add(p.getAcknowledgementNumber());
+			// f.getPacchettiDiCuiHoRicevutoACK().add(p.getAcknowledgementNumber());
 			 f.getNumberSequenceMap().remove(p.getAcknowledgementNumber());
 			 SequenceNumberObject s=new SequenceNumberObject(p.getAcknowledgementNumber());
 			 

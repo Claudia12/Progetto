@@ -17,7 +17,7 @@ public class Flusso
 	private int portaSorgente;
 	private int portaDestinazione;
 	private Map<Long, Integer> numberSequenceMap = new HashMap<Long,Integer>();//cambiare
-	private List<Long> pacchettiDiCuiHoRicevutoACK=new ArrayList<Long>(); 
+	//private List<Long> pacchettiDiCuiHoRicevutoACK=new ArrayList<Long>(); 
 	private Hashtable<Integer,SequenceNumberObject>copieDiNumberSequence=new Hashtable<Integer,SequenceNumberObject>();
 	
 	private List<Long> rttList= new ArrayList<Long>();
@@ -208,13 +208,13 @@ public class Flusso
 		return f;
 	}
 
-	public List<Long> getPacchettiDiCuiHoRicevutoACK() {
-		return pacchettiDiCuiHoRicevutoACK;
-	}
-
-	public void setPacchettiDiCuiHoRicevutoACK(
-			List<Long> pacchettiDiCuiHoRicevutoACK) {
-		this.pacchettiDiCuiHoRicevutoACK = pacchettiDiCuiHoRicevutoACK;
-	}
+//	public List<Long> getPacchettiDiCuiHoRicevutoACK() {
+//		return pacchettiDiCuiHoRicevutoACK;
+//	}
+//
+//	public void setPacchettiDiCuiHoRicevutoACK(
+//			List<Long> pacchettiDiCuiHoRicevutoACK) {
+//		this.pacchettiDiCuiHoRicevutoACK = pacchettiDiCuiHoRicevutoACK;
+//	}
 
 }
