@@ -16,7 +16,7 @@ public class Flusso
 	private Host B;
 	private int portaSorgente;
 	private int portaDestinazione;
-	private Map<Long, Integer> numberSequenceMap = new HashMap<Long,Integer>();
+	private Map<Long, Integer> numberSequenceMap = new HashMap<Long,Integer>();//cambiare
 	private List<Long> pacchettiDiCuiHoRicevutoACK=new ArrayList<Long>(); 
 	private Hashtable<Integer,SequenceNumberObject>copieDiNumberSequence=new Hashtable<Integer,SequenceNumberObject>();
 	
