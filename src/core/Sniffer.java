@@ -1,7 +1,5 @@
 package core;
 
-import java.io.FileOutputStream;
-import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -60,6 +58,7 @@ public class Sniffer
 	  {
 	    // Initialize jpcap
 	    PacketCapture pcap = new PacketCapture();
+	    
 	    System.out.println("Using device '" + device + "'");
 	    pcap.open(device, true);
 	    pcap.setFilter(FILTER, true);
@@ -75,61 +74,31 @@ public class Sniffer
 	{
 
 		List<Connessione> connessioni= new ArrayList<Connessione>();
-		
-		void controlloENotificaObserver(Connessione c)
-		{
-			
-		}
+	//	boolean primoPaccheto=true;
+	//	Connessione connessioneDaVericare=null;
 		@Override
 		public void packetArrived(Packet packet) 
 		{
 			if(packet instanceof TCPPacket)
 			{
 				TCPPacket tcpPacket=(TCPPacket) packet;
-//				Host srcHost=new Host(tcpPacket.getSourceAddress());
-//				Host dstHost=new Host(tcpPacket.getDestinationAddress());
-//				int srcPort=tcpPacket.getSourcePort();
-//				int dstPort=tcpPacket.getDestinationPort();
 				Connessione tmp=new Connessione(new Flusso(new Host(tcpPacket.getSourceAddress()),new Host(tcpPacket.getDestinationAddress()),tcpPacket.getSourcePort(),tcpPacket.getDestinationPort()),new Flusso(new Host(tcpPacket.getDestinationAddress()),new Host(tcpPacket.getSourceAddress()),tcpPacket.getDestinationPort(),tcpPacket.getSourcePort()));
-				if(connessioni.contains(tmp))
+				if(connessioni.contains(tmp))//(connessioneDaVericare.equals(tmp))//
 				{
 					int pos=connessioni.indexOf(tmp);
-					System.out.println("Connessioni prensente : connessioni totali "+connessioni.size());
+					System.out.println("Connessione prensente : connessioni totali "+connessioni.size());
 					connessioni.get(pos).setChanged(true, tcpPacket);
-					//System.out.println("c'è");
-//					if((tmp.getAB().getA().getHostname().equals(srcHost)) && (tmp.getAB().getB().getHostname().equals(dstHost)) && (tmp.getAB().getPortaSorgente()==srcPort) && (tmp.getAB().getPortaDestinazione()==dstPort) )//vuol dire che il flusso che mi interesa è AB
-//					{
-//						tmp.getAB().notifyObservers();
-//					}
-//					else if ((tmp.getBA().getA().getHostname().equals(srcHost)) && (tmp.getBA().getB().getHostname().equals(dstHost))) //
-//					{
-//						tmp.getBA().notifyObservers();
-//					}
+
 				}
 				else //vuol dire che è una nuova connessione trovata percio l aggiungo alla lista e poi faccio tutto cio che ho fatto sopra
 				{
-					//System.out.println("Connessioni size "+connessioni.size());
-					connessioni.add(tmp);
+					System.out.println("Connessione non prensente, connessioni totali  "+connessioni.size());
 					tmp.setChanged(true, tcpPacket);
-//					System.out.println("non c'è");
-//					System.out.println(tmp.getAB().getA().getHostname()+" - "+tmp.getAB().getB().getHostname()+" "+ tmp.getAB().getPortaSorgente()+" "+tmp.getAB().getPortaDestinazione());
-//					System.out.println(tmp.getBA().getA().getHostname()+" - "+tmp.getBA().getB().getHostname()+" "+ tmp.getBA().getPortaSorgente()+" "+tmp.getBA().getPortaDestinazione());
-					
-					//forse devo aggiungere anche gli observer 
-//					if((tmp.getAB().getA().getHostname().equals(srcHost)) && (tmp.getAB().getB().getHostname().equals(dstHost)))//vuol dire che il flusso che mi interesa è AB
-//					{
-//						tmp.getAB().notifyObservers();
-//					}
-//					else if ((tmp.getBA().getA().getHostname().equals(srcHost)) && (tmp.getBA().getB().getHostname().equals(dstHost))) //
-//					{
-//						tmp.getBA().notifyObservers();
-//					}
-//					
+					connessioni.add(tmp);
 				}
 			}
 			
 		} 
 		
 	}
-
 

@@ -2,6 +2,7 @@ package object;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
 import java.util.Timer;
@@ -15,18 +16,19 @@ public class Flusso
 	private Host B;
 	private int portaSorgente;
 	private int portaDestinazione;
-	private static Map<Long,Integer> numberSequenceList = new HashMap<>();
-	private static Map<Long,Integer> numberSequenceListRepeat = new HashMap<>();
+	private Map<Long, Integer> numberSequenceMap = new HashMap<Long,Integer>();
+	private List<Long> pacchettiDiCuiHoRicevutoACK=new ArrayList<Long>(); 
+	private Hashtable<Integer,SequenceNumberObject>copieDiNumberSequence=new Hashtable<Integer,SequenceNumberObject>();
+	
 	private List<Long> rttList= new ArrayList<Long>();
 	private List<Long> rtoList= new ArrayList<Long>();
 	private List<Integer> rwin= new ArrayList<Integer>();
-	private int ripetizione;
+	private long ripetizione;
 	private Integer totByte;
 	private List<Integer> byteSec= new ArrayList<Integer>();
 	private int contatore=0;
 	private int numeroPacchettiTotali;
-	
-	
+	private int duplicatiTotale=0;
 	
 	public Flusso(Host A,Host B,int ps,int pd)
 	{
@@ -36,21 +38,22 @@ public class Flusso
 		portaDestinazione=pd;
 		totByte=0;
 		numeroPacchettiTotali=0;
-		creaTimer();
+		//creaTimer();
 	}
 
-	private void creaTimer() 
-	{
-		Timer timer = new Timer();
-        timer.schedule(new TimerTask() 
-        {
-            public void run()
-            {
-             setContatore();
-            }
-
-        }, 1000, 1000);	
-	}
+//	private void creaTimer() 
+//	{
+//		Timer timer = new Timer();
+//        timer.schedule(new TimerTask() 
+//        {
+//            public void run()
+//            {
+//            //System.out.println("vengo eseguita");
+//            setContatore();
+//            }
+//
+//        }, 1000, 1000);	
+//	}
 
 	public Host getA() {
 		return A;
@@ -73,28 +76,37 @@ public class Flusso
 	public boolean equals(Object obj) 
 	{
 	//	System.out.println("che succede?");
-	 Flusso f=(Flusso) obj;
-	 if(this.A.equals(f.getA()) && this.B.equals(f.getB()) && this.portaSorgente==f.getPortaSorgente() && this.portaDestinazione==f.getPortaDestinazione())
-	 {
+		if(obj==null || !(obj instanceof Flusso))
+			{
+			return false;
+			}
+		Flusso f=(Flusso) obj;
+		if(this.A.equals(f.getA()) && this.B.equals(f.getB()) && this.portaSorgente==f.getPortaSorgente() && this.portaDestinazione==f.getPortaDestinazione())
+		{
 		// System.out.println("uguale");
-		 return true;
-	 }
-	 else
-		 return false;
+			return true;
+		}
+		
+	return false;
 	}
 
-	public Map<Long, Integer> getNumberSequenceList() 
+	public Map<Long, Integer> getNumberSequenceMap() 
 	{
-		//System.out.println(A.hostname+" - "+B.hostname);
-		return numberSequenceList;
+		//System.out.println("Faccio il get");
+		return numberSequenceMap;
 	}
 
-	public int getRipetizione() {
+	public long getRipetizione() 
+	{
 		return ripetizione;
 	}
 
-	public void setRipetizione(int ripetizione) {
-		this.ripetizione = ripetizione;
+	public void setRipetizione()
+	{
+		System.out.println("duplicati Totali : "+duplicatiTotale+" e pacchetti totali : "+numeroPacchettiTotali);
+		ripetizione=duplicatiTotale/numeroPacchettiTotali;
+		System.out.println("ripetizione uguale : "+ripetizione);
+	
 	}
 
 	public List<Integer> getByteSec() {
@@ -103,10 +115,6 @@ public class Flusso
 
 	public void setByteSec(List<Integer> byteSec) {
 		this.byteSec = byteSec;
-	}
-
-	public Map<Long, Integer> getNumberSequenceListRepeat() {
-		return numberSequenceListRepeat;
 	}
 
 	public List<Long> getRttList() {
@@ -125,29 +133,11 @@ public class Flusso
 		return totByte;
 	}
 
-	public void setTotByte(Integer totByte) {
-		this.totByte = totByte;
-	}
-
-	public int getContatore() {
-		return contatore;
-	}
-
-	private void setContatore()
+	public void setTotByte(Integer b) 
 	{
-		//System.out.println(A.hostname+" - "+B.hostname+" contatore : "+contatore);
-		if(contatore<5)
-		{		
-			this.contatore++;
-		}
-		else
-		{
-			System.out.println("calcola");
-			contatore=0;
-			calcola();
-			
-		}
-		
+		System.out.println("tot byte prima "+totByte+" cosa passo alla funzione "+b);
+		this.totByte += b;
+		System.out.println("tot byte dopo "+totByte+" cosa passo alla funzione "+b);
 	}
 
 	private void calcola() 
@@ -158,20 +148,73 @@ public class Flusso
 		{
 			System.out.println("totbyte ora "+totByte);
 			byteSec.add(totByte/5);
+			totByte=0;
 		}
 		else
 		{
-			
+			System.out.println("sono entrata nel else");
+			System.out.println("totByte : "+totByte);
 			byteSec.add(totByte);
 		}
 		
-		for(Integer i:byteSec)
-		{
-			System.out.println("byte/sec = " + i);
-		}  
+//		for(Integer i:byteSec)
+//		{
+//			System.out.println("byte/sec = " + i);
+//		}  
+	}
+
+	public int getNumeroPacchettiTotali() {
+		return numeroPacchettiTotali;
+	}
+
+	public void setNumeroPacchettiTotali() 
+	{
+		numeroPacchettiTotali++;
+	}
+
+	public Hashtable<Integer,SequenceNumberObject> getCopieDiNumberSequence() {
+		return copieDiNumberSequence;
+	}
+
+	public void setCopieDiNumberSequence(Hashtable<Integer, SequenceNumberObject> copieDiNumberSequence) {
+		this.copieDiNumberSequence = copieDiNumberSequence;
 	}
    
 	
+	public void setDuplicatiTotale()
+	{	
+		duplicatiTotale++;
+	}
+
+
+	private void setContatore() 
+	{
 	
+		if(contatore<5)
+		{
+			 contatore++;
+		}
+		else
+		{
+			calcola();
+			contatore=0;
+		}
+	}
+
+	@Override
+	public String toString() 
+	{
+		String f="Flusso con Host A :" + A + " e Host B : " + B;
+		return f;
+	}
+
+	public List<Long> getPacchettiDiCuiHoRicevutoACK() {
+		return pacchettiDiCuiHoRicevutoACK;
+	}
+
+	public void setPacchettiDiCuiHoRicevutoACK(
+			List<Long> pacchettiDiCuiHoRicevutoACK) {
+		this.pacchettiDiCuiHoRicevutoACK = pacchettiDiCuiHoRicevutoACK;
+	}
 
 }

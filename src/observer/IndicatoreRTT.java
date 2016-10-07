@@ -7,6 +7,7 @@ import net.sourceforge.jpcap.net.TCPPacket;
 import object.Connessione;
 import object.Flusso;
 import object.Host;
+import object.SequenceNumberObject;
 
 public class IndicatoreRTT implements Observer{
 
@@ -14,7 +15,7 @@ public class IndicatoreRTT implements Observer{
 	@Override
 	public void update(Observable o, Object arg) 
 	{
-		//System.out.println("SONO L'INDICATORE DI RTT ");
+		System.out.println("SONO L'INDICATORE DI RTT ");
 		Connessione connessioneDaControllare=(Connessione)o;
 //		System.out.println(connessioneDaControllare.getAB().getNumberSequenceList().size());
 //		System.out.println(connessioneDaControllare.getBA().getNumberSequenceList().size());
@@ -27,14 +28,18 @@ public class IndicatoreRTT implements Observer{
 //		System.out.println(pacchettoArrivato.getSequenceNumber());
 		Flusso flusso=new Flusso(new Host(pacchettoArrivato.getSourceAddress()),new Host(pacchettoArrivato.getDestinationAddress()),pacchettoArrivato.getSourcePort(),pacchettoArrivato.getDestinationPort());
 		//System.out.println(pacchettoArrivato.isAck());
+		System.out.println("A in questo caso è : "+pacchettoArrivato.getSourceAddress()+" B invece è : "+pacchettoArrivato.getDestinationAddress());
+		System.out.println("Il pacchetto arrivato è questo:  "+pacchettoArrivato.getSequenceNumber());
 		if(flusso.equals(connessioneDaControllare.getAB()) && pacchettoArrivato.isAck())
 		{
+			System.out.println("E' un ack");
 			check(connessioneDaControllare.getBA(), pacchettoArrivato);
 
 		}
 		
 		else if (flusso.equals(connessioneDaControllare.getBA()) && pacchettoArrivato.isAck())
 		{
+			System.out.println("E' un ack ");
 			check(connessioneDaControllare.getAB(), pacchettoArrivato);
 		}
 		  
@@ -48,18 +53,26 @@ public class IndicatoreRTT implements Observer{
 	
 	private void check(Flusso f, TCPPacket p)
 	{
-		if(f.getNumberSequenceList().containsKey(p.getAcknowledgementNumber()))
+		if(f.getNumberSequenceMap().containsKey(p.getAcknowledgementNumber()))
 		  {
-			 long rtt=p.getTimeval().getMicroSeconds()-f.getNumberSequenceList().get(p.getAcknowledgementNumber());
+			System.out.println("ricevuto ack del paccheto : "+p.getAcknowledgementNumber());
+			int secondiInMicro=(int)p.getTimeval().getSeconds()*1000000;
+			System.out.println("secondi in micro cosa ne esce "+ secondiInMicro);
+			int tempoArrivo= secondiInMicro+p.getTimeval().getMicroSeconds();
+			System.out.println("totole : "+tempoArrivo);
+			 long rtt=tempoArrivo-f.getNumberSequenceMap().get(p.getAcknowledgementNumber());
 			 f.getRttList().add(rtt);
+			 f.getPacchettiDiCuiHoRicevutoACK().add(p.getAcknowledgementNumber());
+			 f.getNumberSequenceMap().remove(p.getAcknowledgementNumber());
+			 SequenceNumberObject s=new SequenceNumberObject(p.getAcknowledgementNumber());
 			 
+			 //f.getCopieDiNumberSequence().remove(s.hashCode());
 		  }
-		  else if(f.getNumberSequenceListRepeat().containsKey(p.getAcknowledgementNumber()))
-		  {
-			  long rtt=p.getTimeval().getMicroSeconds()-f.getNumberSequenceListRepeat().get(p.getAcknowledgementNumber());
-			  f.getRttList().add(rtt);
-		  }
-
+		else
+		{
+			System.out.println("arrivato un ack ma non ho il pacchetto corrispondente");
+		}
+		//arrivato un ack ma non ho il pacchetto corrispondente
 		for(long l:f.getRttList())
 		{
 			System.out.println("rtt : "+l);

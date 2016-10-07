@@ -13,7 +13,7 @@ public class IndicatoreTOTByte implements Observer {
 	@Override
 	public void update(Observable o, Object arg) 
 	{
-	//	System.out.println("SONO L'INDICATORE TotByte ");
+		System.out.println("SONO L'INDICATORE TotByte ");
 		Connessione connessioneDaControllare=(Connessione)o;
 		TCPPacket pacchettoArrivato=(TCPPacket)arg;
 		Flusso flusso=new Flusso(new Host(pacchettoArrivato.getSourceAddress()),new Host(pacchettoArrivato.getDestinationAddress()),pacchettoArrivato.getSourcePort(),pacchettoArrivato.getDestinationPort());
@@ -34,8 +34,8 @@ public class IndicatoreTOTByte implements Observer {
 
 	private void check(Flusso f, TCPPacket p)
 	{
-		int somma=f.getTotByte()+p.getPayloadDataLength();
-		System.out.println("somma in BA "+somma);
+		int somma=p.getPayloadDataLength();
+		System.out.println("somma : "+somma);
 		f.setTotByte(somma);
 
 	}

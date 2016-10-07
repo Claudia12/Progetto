@@ -34,6 +34,10 @@ public class Host
 	@Override
 	public boolean equals(Object obj) 
 	{
+		if(obj==null || !(obj instanceof Host))
+		{
+		return false;
+		}
 		Host tmp=(Host)obj;
 		return (this.getAddr().equals(tmp.getAddr()) && this.hostname.equals(tmp.getHostname()));
 	}
@@ -45,4 +49,13 @@ public class Host
 	public InetAddress getAddr() {
 		return addr;
 	}
+
+	@Override
+	public String toString() 
+	{
+	String h="Indirizzo : "+ hostname;
+	return h;
+	}
+	
+	
 }

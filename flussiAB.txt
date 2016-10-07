@@ -1,0 +1,627 @@
+192.168.1.10 - 62.67.193.75 - 53482 - 443
+Numero di sequnza del pacchetto arrivato 2017187070 il tempo di arrivo : Tue Jul 12 09:52:47 CEST 2016 , 1468309967 secondi 629518 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 2017187070 microsecondi -1911919410
+192.168.1.10 - 160.97.62.1 - 53594 - 443
+Numero di sequnza del pacchetto arrivato 901166633 il tempo di arrivo : Tue Jul 12 09:52:48 CEST 2016 , 1468309968 secondi 760700 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 901166633 microsecondi -1910788228
+192.168.1.10 - 216.58.208.46 - 53371 - 443
+Numero di sequnza del pacchetto arrivato 2672514022 il tempo di arrivo : Tue Jul 12 09:52:53 CEST 2016 , 1468309973 secondi 69828 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 2672514022 microsecondi -1906479100
+192.168.1.10 - 64.233.167.188 - 52975 - 5228
+Numero di sequnza del pacchetto arrivato 4103767228 il tempo di arrivo : Tue Jul 12 09:52:55 CEST 2016 , 1468309975 secondi 143949 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 4103767228 microsecondi -1904404979
+31.13.86.8 - 192.168.1.10 - 443 - 53334
+Numero di sequnza del pacchetto arrivato 3372822235 il tempo di arrivo : Tue Jul 12 09:52:55 CEST 2016 , 1468309975 secondi 360930 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 3372822235 microsecondi -1904187998
+31.13.86.8 - 192.168.1.10 - 443 - 53334
+Numero di sequnza del pacchetto arrivato 3372822235 il tempo di arrivo : Tue Jul 12 09:52:55 CEST 2016 , 1468309975 secondi 364268 microsecondi
+% ripetizione : 0
+Size mappa  1
+hashCode : -922145061 valore : sequence number 3372822235 numero copie 1
+sequence : 3372822235 microsecondi -1904187998
+rto = 3338
+31.13.86.8 - 192.168.1.10 - 443 - 53334
+Numero di sequnza del pacchetto arrivato 3372822467 il tempo di arrivo : Tue Jul 12 09:52:55 CEST 2016 , 1468309975 secondi 399795 microsecondi
+% ripetizione : 0
+Size mappa  2
+hashCode : -922145061 valore : sequence number 3372822235 numero copie 1
+sequence : 3372822235 microsecondi -1904187998
+sequence : 3372822467 microsecondi -1904149133
+rto = 3338
+192.168.1.10 - 2.20.252.161 - 53384 - 80
+Numero di sequnza del pacchetto arrivato 2319919051 il tempo di arrivo : Tue Jul 12 09:52:56 CEST 2016 , 1468309976 secondi 211014 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 2319919051 microsecondi -1903337914
+192.168.1.10 - 95.100.86.201 - 53385 - 80
+Numero di sequnza del pacchetto arrivato 1096165257 il tempo di arrivo : Tue Jul 12 09:52:56 CEST 2016 , 1468309976 secondi 614037 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 1096165257 microsecondi -1902934891
+192.168.1.10 - 216.58.198.34 - 53573 - 443
+Numero di sequnza del pacchetto arrivato 1249667091 il tempo di arrivo : Tue Jul 12 09:53:00 CEST 2016 , 1468309980 secondi 754256 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 1249667091 microsecondi -1898794672
+192.168.1.10 - 216.58.198.14 - 53373 - 443
+Numero di sequnza del pacchetto arrivato 2520596452 il tempo di arrivo : Tue Jul 12 09:53:05 CEST 2016 , 1468309985 secondi 351563 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 2520596452 microsecondi -1894197365
+31.13.86.8 - 192.168.1.10 - 443 - 53334
+Numero di sequnza del pacchetto arrivato 3372822501 il tempo di arrivo : Tue Jul 12 09:53:07 CEST 2016 , 1468309987 secondi 106219 microsecondi
+% ripetizione : 0
+Size mappa  3
+hashCode : -922145061 valore : sequence number 3372822235 numero copie 1
+sequence : 3372822235 microsecondi -1904187998
+sequence : 3372822467 microsecondi -1904149133
+sequence : 3372822501 microsecondi -1892442709
+rto = 3338
+31.13.86.8 - 192.168.1.10 - 443 - 53334
+Numero di sequnza del pacchetto arrivato 3372822729 il tempo di arrivo : Tue Jul 12 09:53:07 CEST 2016 , 1468309987 secondi 147296 microsecondi
+% ripetizione : 0
+Size mappa  4
+hashCode : -922145061 valore : sequence number 3372822235 numero copie 1
+sequence : 3372822235 microsecondi -1904187998
+sequence : 3372822467 microsecondi -1904149133
+sequence : 3372822501 microsecondi -1892442709
+sequence : 3372822729 microsecondi -1892401632
+rto = 3338
+192.168.1.10 - 216.58.198.14 - 53335 - 443
+Numero di sequnza del pacchetto arrivato 1242989095 il tempo di arrivo : Tue Jul 12 09:53:07 CEST 2016 , 1468309987 secondi 191655 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 1242989095 microsecondi -1892357273
+192.168.1.10 - 216.58.210.195 - 53575 - 443
+Numero di sequnza del pacchetto arrivato 313944131 il tempo di arrivo : Tue Jul 12 09:53:08 CEST 2016 , 1468309988 secondi 781747 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 313944131 microsecondi -1890767181
+192.168.1.10 - 54.239.39.149 - 53369 - 443
+Numero di sequnza del pacchetto arrivato 3074850306 il tempo di arrivo : Tue Jul 12 09:53:09 CEST 2016 , 1468309989 secondi 101754 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 3074850306 microsecondi -1890447174
+192.168.1.10 - 54.239.39.149 - 53368 - 443
+Numero di sequnza del pacchetto arrivato 302769627 il tempo di arrivo : Tue Jul 12 09:53:09 CEST 2016 , 1468309989 secondi 330826 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 302769627 microsecondi -1890218102
+192.168.1.10 - 31.13.86.36 - 53328 - 443
+Numero di sequnza del pacchetto arrivato 199998836 il tempo di arrivo : Tue Jul 12 09:53:10 CEST 2016 , 1468309990 secondi 733401 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 199998836 microsecondi -1888815527
+192.168.1.10 - 31.13.86.36 - 53328 - 443
+Numero di sequnza del pacchetto arrivato 199999090 il tempo di arrivo : Tue Jul 12 09:53:10 CEST 2016 , 1468309990 secondi 733546 microsecondi
+% ripetizione : 0
+Size mappa  2
+sequence : 199999090 microsecondi -1888815382
+sequence : 199998836 microsecondi -1888815527
+192.168.1.10 - 31.13.86.36 - 53328 - 443
+Numero di sequnza del pacchetto arrivato 199999128 il tempo di arrivo : Tue Jul 12 09:53:10 CEST 2016 , 1468309990 secondi 733626 microsecondi
+% ripetizione : 0
+Size mappa  3
+sequence : 199999090 microsecondi -1888815382
+sequence : 199998836 microsecondi -1888815527
+sequence : 199999128 microsecondi -1888815302
+192.168.1.10 - 31.13.86.36 - 53328 - 443
+Numero di sequnza del pacchetto arrivato 200000538 il tempo di arrivo : Tue Jul 12 09:53:10 CEST 2016 , 1468309990 secondi 733632 microsecondi
+% ripetizione : 0
+Size mappa  4
+sequence : 199999090 microsecondi -1888815382
+sequence : 199998836 microsecondi -1888815527
+sequence : 199999128 microsecondi -1888815302
+sequence : 200000538 microsecondi -1888815296
+192.168.1.10 - 31.13.86.36 - 53328 - 443
+Numero di sequnza del pacchetto arrivato 200001915 il tempo di arrivo : Tue Jul 12 09:53:10 CEST 2016 , 1468309990 secondi 760742 microsecondi
+% ripetizione : 0
+Size mappa  4
+sequence : 200001915 microsecondi -1888788186
+sequence : 199999090 microsecondi -1888815382
+sequence : 199998836 microsecondi -1888815527
+sequence : 200000538 microsecondi -1888815296
+rtt = 27007
+numberSequenceDiCuiHoRicevutoACK = 199999128
+192.168.1.10 - 31.13.86.36 - 53328 - 443
+Numero di sequnza del pacchetto arrivato 200001915 il tempo di arrivo : Tue Jul 12 09:53:10 CEST 2016 , 1468309990 secondi 761435 microsecondi
+% ripetizione : 0
+Size mappa  4
+sequence : 200001915 microsecondi -1888787493
+sequence : 199999090 microsecondi -1888815382
+sequence : 199998836 microsecondi -1888815527
+sequence : 200000538 microsecondi -1888815296
+rtt = 27007
+numberSequenceDiCuiHoRicevutoACK = 199999128
+192.168.1.10 - 31.13.86.36 - 53328 - 443
+Numero di sequnza del pacchetto arrivato 200001915 il tempo di arrivo : Tue Jul 12 09:53:10 CEST 2016 , 1468309990 secondi 822978 microsecondi
+% ripetizione : 0
+Size mappa  4
+sequence : 200001915 microsecondi -1888725950
+sequence : 199999090 microsecondi -1888815382
+sequence : 199998836 microsecondi -1888815527
+sequence : 200000538 microsecondi -1888815296
+rtt = 27007
+rtt = 545
+numberSequenceDiCuiHoRicevutoACK = 199999128
+numberSequenceDiCuiHoRicevutoACK = 200001915
+192.168.1.10 - 31.13.86.36 - 53328 - 443
+Numero di sequnza del pacchetto arrivato 200001915 il tempo di arrivo : Tue Jul 12 09:53:10 CEST 2016 , 1468309990 secondi 826108 microsecondi
+% ripetizione : 0
+Size mappa  4
+sequence : 200001915 microsecondi -1888722820
+sequence : 199999090 microsecondi -1888815382
+sequence : 199998836 microsecondi -1888815527
+sequence : 200000538 microsecondi -1888815296
+rtt = 27007
+rtt = 545
+rtt = 3014
+numberSequenceDiCuiHoRicevutoACK = 199999128
+numberSequenceDiCuiHoRicevutoACK = 200001915
+numberSequenceDiCuiHoRicevutoACK = 200001915
+192.168.1.10 - 216.58.210.196 - 53038 - 80
+Numero di sequnza del pacchetto arrivato 2679620948 il tempo di arrivo : Tue Jul 12 09:53:11 CEST 2016 , 1468309991 secondi 231882 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 2679620948 microsecondi -1888317046
+192.168.1.10 - 216.58.210.195 - 53039 - 80
+Numero di sequnza del pacchetto arrivato 2633521110 il tempo di arrivo : Tue Jul 12 09:53:11 CEST 2016 , 1468309991 secondi 301892 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 2633521110 microsecondi -1888247036
+192.168.1.10 - 216.58.198.5 - 53592 - 443
+Numero di sequnza del pacchetto arrivato 4208066653 il tempo di arrivo : Tue Jul 12 09:53:12 CEST 2016 , 1468309992 secondi 561959 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 4208066653 microsecondi -1886986969
+192.168.1.10 - 31.13.86.4 - 53577 - 443
+Numero di sequnza del pacchetto arrivato 563415852 il tempo di arrivo : Tue Jul 12 09:53:13 CEST 2016 , 1468309993 secondi 911044 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 563415852 microsecondi -1885637884
+192.168.1.10 - 216.58.201.195 - 53375 - 443
+Numero di sequnza del pacchetto arrivato 1730296409 il tempo di arrivo : Tue Jul 12 09:53:14 CEST 2016 , 1468309994 secondi 441074 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 1730296409 microsecondi -1885107854
+192.168.1.10 - 216.58.198.14 - 53373 - 443
+Numero di sequnza del pacchetto arrivato 2520596453 il tempo di arrivo : Tue Jul 12 09:53:20 CEST 2016 , 1468310000 secondi 247188 microsecondi
+% ripetizione : 0
+Size mappa  2
+sequence : 2520596453 microsecondi -1879301740
+sequence : 2520596452 microsecondi -1894197365
+192.168.1.10 - 216.58.198.14 - 53373 - 443
+Numero di sequnza del pacchetto arrivato 2520596453 il tempo di arrivo : Tue Jul 12 09:53:20 CEST 2016 , 1468310000 secondi 247547 microsecondi
+% ripetizione : 0
+Size mappa  2
+sequence : 2520596453 microsecondi -1879301381
+sequence : 2520596452 microsecondi -1894197365
+192.168.1.10 - 216.58.198.14 - 53373 - 443
+Numero di sequnza del pacchetto arrivato 2520596454 il tempo di arrivo : Tue Jul 12 09:53:20 CEST 2016 , 1468310000 secondi 249258 microsecondi
+% ripetizione : 0
+Size mappa  2
+sequence : 2520596454 microsecondi -1879299670
+sequence : 2520596452 microsecondi -1894197365
+rtt = 1612
+numberSequenceDiCuiHoRicevutoACK = 2520596453
+192.168.1.10 - 216.58.198.14 - 53373 - 443
+Numero di sequnza del pacchetto arrivato 2520596454 il tempo di arrivo : Tue Jul 12 09:53:20 CEST 2016 , 1468310000 secondi 249416 microsecondi
+% ripetizione : 0
+Size mappa  2
+sequence : 2520596454 microsecondi -1879299512
+sequence : 2520596452 microsecondi -1894197365
+rtt = 1612
+numberSequenceDiCuiHoRicevutoACK = 2520596453
+192.168.1.10 - 172.217.19.66 - 53376 - 80
+Numero di sequnza del pacchetto arrivato 3332136451 il tempo di arrivo : Tue Jul 12 09:53:22 CEST 2016 , 1468310002 secondi 41499 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 3332136451 microsecondi -1877507429
+192.168.1.10 - 2.20.251.18 - 53486 - 80
+Numero di sequnza del pacchetto arrivato 3488121739 il tempo di arrivo : Tue Jul 12 09:53:22 CEST 2016 , 1468310002 secondi 741552 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 3488121739 microsecondi -1876807376
+192.168.1.10 - 2.20.251.18 - 53485 - 80
+Numero di sequnza del pacchetto arrivato 426148328 il tempo di arrivo : Tue Jul 12 09:53:22 CEST 2016 , 1468310002 secondi 741613 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 426148328 microsecondi -1876807315
+192.168.1.10 - 2.20.251.18 - 53487 - 80
+Numero di sequnza del pacchetto arrivato 193767266 il tempo di arrivo : Tue Jul 12 09:53:22 CEST 2016 , 1468310002 secondi 932573 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 193767266 microsecondi -1876616355
+192.168.1.10 - 2.20.251.18 - 53488 - 80
+Numero di sequnza del pacchetto arrivato 2644795322 il tempo di arrivo : Tue Jul 12 09:53:22 CEST 2016 , 1468310002 secondi 941538 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 2644795322 microsecondi -1876607390
+192.168.1.10 - 2.20.251.18 - 53382 - 80
+Numero di sequnza del pacchetto arrivato 1066506131 il tempo di arrivo : Tue Jul 12 09:53:22 CEST 2016 , 1468310002 secondi 941580 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 1066506131 microsecondi -1876607348
+192.168.1.10 - 2.20.251.18 - 53381 - 80
+Numero di sequnza del pacchetto arrivato 130094848 il tempo di arrivo : Tue Jul 12 09:53:22 CEST 2016 , 1468310002 secondi 941609 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 130094848 microsecondi -1876607319
+192.168.1.10 - 216.58.198.6 - 53541 - 80
+Numero di sequnza del pacchetto arrivato 3472031831 il tempo di arrivo : Tue Jul 12 09:53:26 CEST 2016 , 1468310006 secondi 882788 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 3472031831 microsecondi -1872666140
+192.168.1.10 - 159.8.78.177 - 53542 - 80
+Numero di sequnza del pacchetto arrivato 532961900 il tempo di arrivo : Tue Jul 12 09:53:26 CEST 2016 , 1468310006 secondi 892787 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 532961900 microsecondi -1872656141
+192.168.1.10 - 216.58.198.6 - 53391 - 80
+Numero di sequnza del pacchetto arrivato 3722656697 il tempo di arrivo : Tue Jul 12 09:53:26 CEST 2016 , 1468310006 secondi 941779 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 3722656697 microsecondi -1872607149
+192.168.1.10 - 216.58.198.6 - 53394 - 80
+Numero di sequnza del pacchetto arrivato 2204121232 il tempo di arrivo : Tue Jul 12 09:53:26 CEST 2016 , 1468310006 secondi 941835 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 2204121232 microsecondi -1872607093
+192.168.1.10 - 159.8.78.177 - 53398 - 80
+Numero di sequnza del pacchetto arrivato 1189499907 il tempo di arrivo : Tue Jul 12 09:53:26 CEST 2016 , 1468310006 secondi 941863 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 1189499907 microsecondi -1872607065
+192.168.1.10 - 185.86.137.17 - 53458 - 80
+Numero di sequnza del pacchetto arrivato 4112022805 il tempo di arrivo : Tue Jul 12 09:53:27 CEST 2016 , 1468310007 secondi 522832 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 4112022805 microsecondi -1872026096
+192.168.1.10 - 79.140.81.250 - 53522 - 80
+Numero di sequnza del pacchetto arrivato 26611110 il tempo di arrivo : Tue Jul 12 09:53:27 CEST 2016 , 1468310007 secondi 522892 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 26611110 microsecondi -1872026036
+192.168.1.10 - 107.178.242.85 - 53478 - 80
+Numero di sequnza del pacchetto arrivato 790863816 il tempo di arrivo : Tue Jul 12 09:53:27 CEST 2016 , 1468310007 secondi 582815 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 790863816 microsecondi -1871966113
+192.168.1.10 - 23.221.235.133 - 53462 - 80
+Numero di sequnza del pacchetto arrivato 1477470504 il tempo di arrivo : Tue Jul 12 09:53:27 CEST 2016 , 1468310007 secondi 741832 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 1477470504 microsecondi -1871807096
+192.168.1.10 - 2.23.20.129 - 53463 - 80
+Numero di sequnza del pacchetto arrivato 1247453828 il tempo di arrivo : Tue Jul 12 09:53:27 CEST 2016 , 1468310007 secondi 741890 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 1247453828 microsecondi -1871807038
+192.168.1.10 - 216.58.198.2 - 53472 - 80
+Numero di sequnza del pacchetto arrivato 1790087066 il tempo di arrivo : Tue Jul 12 09:53:27 CEST 2016 , 1468310007 secondi 841829 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 1790087066 microsecondi -1871707099
+192.168.1.10 - 185.86.139.19 - 53520 - 80
+Numero di sequnza del pacchetto arrivato 1065747173 il tempo di arrivo : Tue Jul 12 09:53:27 CEST 2016 , 1468310007 secondi 841884 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 1065747173 microsecondi -1871707044
+192.168.1.10 - 62.67.193.75 - 53454 - 80
+Numero di sequnza del pacchetto arrivato 596708344 il tempo di arrivo : Tue Jul 12 09:53:28 CEST 2016 , 1468310008 secondi 482896 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 596708344 microsecondi -1871066032
+192.168.1.10 - 216.58.210.196 - 53038 - 80
+Numero di sequnza del pacchetto arrivato 2679620949 il tempo di arrivo : Tue Jul 12 09:53:28 CEST 2016 , 1468310008 secondi 922593 microsecondi
+% ripetizione : 0
+Size mappa  2
+sequence : 2679620949 microsecondi -1870626335
+sequence : 2679620948 microsecondi -1888317046
+192.168.1.10 - 216.58.210.196 - 53038 - 80
+Numero di sequnza del pacchetto arrivato 2679621728 il tempo di arrivo : Tue Jul 12 09:53:28 CEST 2016 , 1468310008 secondi 956567 microsecondi
+% ripetizione : 0
+Size mappa  3
+sequence : 2679620949 microsecondi -1870626335
+sequence : 2679620948 microsecondi -1888317046
+sequence : 2679621728 microsecondi -1870592361
+192.168.1.10 - 216.58.201.195 - 53375 - 443
+Numero di sequnza del pacchetto arrivato 1730296410 il tempo di arrivo : Tue Jul 12 09:53:28 CEST 2016 , 1468310008 secondi 958261 microsecondi
+% ripetizione : 0
+Size mappa  2
+sequence : 1730296409 microsecondi -1885107854
+sequence : 1730296410 microsecondi -1870590667
+192.168.1.10 - 216.58.201.195 - 53375 - 443
+Numero di sequnza del pacchetto arrivato 1730296410 il tempo di arrivo : Tue Jul 12 09:53:28 CEST 2016 , 1468310008 secondi 958619 microsecondi
+% ripetizione : 0
+Size mappa  2
+sequence : 1730296409 microsecondi -1885107854
+sequence : 1730296410 microsecondi -1870590309
+192.168.1.10 - 216.58.201.195 - 53375 - 443
+Numero di sequnza del pacchetto arrivato 1730296411 il tempo di arrivo : Tue Jul 12 09:53:28 CEST 2016 , 1468310008 secondi 959219 microsecondi
+% ripetizione : 0
+Size mappa  2
+sequence : 1730296409 microsecondi -1885107854
+sequence : 1730296411 microsecondi -1870589709
+rtt = 522
+numberSequenceDiCuiHoRicevutoACK = 1730296410
+192.168.1.10 - 216.58.210.195 - 53039 - 80
+Numero di sequnza del pacchetto arrivato 2633521111 il tempo di arrivo : Tue Jul 12 09:53:28 CEST 2016 , 1468310008 secondi 962538 microsecondi
+% ripetizione : 0
+Size mappa  2
+sequence : 2633521110 microsecondi -1888247036
+sequence : 2633521111 microsecondi -1870586390
+192.168.1.10 - 216.58.210.195 - 53596 - 80
+Numero di sequnza del pacchetto arrivato 2328359101 il tempo di arrivo : Tue Jul 12 09:53:28 CEST 2016 , 1468310008 secondi 963282 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 2328359101 microsecondi -1870585646
+192.168.1.10 - 216.58.210.195 - 53596 - 80
+Numero di sequnza del pacchetto arrivato 2328359102 il tempo di arrivo : Tue Jul 12 09:53:28 CEST 2016 , 1468310008 secondi 997286 microsecondi
+% ripetizione : 0
+Size mappa  2
+sequence : 2328359101 microsecondi -1870585646
+sequence : 2328359102 microsecondi -1870551642
+192.168.1.10 - 216.58.210.195 - 53039 - 80
+Numero di sequnza del pacchetto arrivato 2633522182 il tempo di arrivo : Tue Jul 12 09:53:29 CEST 2016 , 1468310009 secondi 25704 microsecondi
+% ripetizione : 0
+Size mappa  3
+sequence : 2633521110 microsecondi -1888247036
+sequence : 2633521111 microsecondi -1870586390
+sequence : 2633522182 microsecondi -1870523224
+192.168.1.10 - 216.58.198.14 - 53439 - 443
+Numero di sequnza del pacchetto arrivato 83557618 il tempo di arrivo : Tue Jul 12 09:53:29 CEST 2016 , 1468310009 secondi 997960 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 83557618 microsecondi -1869550968
+192.168.1.10 - 160.97.62.1 - 53597 - 443
+Numero di sequnza del pacchetto arrivato 3439537537 il tempo di arrivo : Tue Jul 12 09:53:30 CEST 2016 , 1468310010 secondi 310221 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 3439537537 microsecondi -1869238707
+192.168.1.10 - 160.97.62.1 - 53597 - 443
+Numero di sequnza del pacchetto arrivato 3439537538 il tempo di arrivo : Tue Jul 12 09:53:30 CEST 2016 , 1468310010 secondi 336888 microsecondi
+% ripetizione : 0
+Size mappa  2
+sequence : 3439537538 microsecondi -1869212040
+sequence : 3439537537 microsecondi -1869238707
+192.168.1.10 - 160.97.62.1 - 53597 - 443
+Numero di sequnza del pacchetto arrivato 3439537538 il tempo di arrivo : Tue Jul 12 09:53:30 CEST 2016 , 1468310010 secondi 338090 microsecondi
+% ripetizione : 0
+Size mappa  2
+hashCode : -855429758 valore : sequence number 3439537538 numero copie 1
+sequence : 3439537538 microsecondi -1869212040
+sequence : 3439537537 microsecondi -1869238707
+rto = 1202
+192.168.1.10 - 160.97.62.1 - 53597 - 443
+Numero di sequnza del pacchetto arrivato 3439538055 il tempo di arrivo : Tue Jul 12 09:53:30 CEST 2016 , 1468310010 secondi 366734 microsecondi
+% ripetizione : 0
+Size mappa  3
+hashCode : -855429758 valore : sequence number 3439537538 numero copie 1
+sequence : 3439537538 microsecondi -1869212040
+sequence : 3439538055 microsecondi -1869182194
+sequence : 3439537537 microsecondi -1869238707
+rto = 1202
+192.168.1.10 - 160.97.62.1 - 53597 - 443
+Numero di sequnza del pacchetto arrivato 3439538055 il tempo di arrivo : Tue Jul 12 09:53:30 CEST 2016 , 1468310010 secondi 367186 microsecondi
+% ripetizione : 0
+Size mappa  3
+hashCode : -855429241 valore : sequence number 3439538055 numero copie 1
+hashCode : -855429758 valore : sequence number 3439537538 numero copie 1
+sequence : 3439537538 microsecondi -1869212040
+sequence : 3439538055 microsecondi -1869182194
+sequence : 3439537537 microsecondi -1869238707
+rto = 1202
+rto = 452
+192.168.1.10 - 160.97.62.1 - 53597 - 443
+Numero di sequnza del pacchetto arrivato 3439538114 il tempo di arrivo : Tue Jul 12 09:53:30 CEST 2016 , 1468310010 secondi 367813 microsecondi
+% ripetizione : 0
+Size mappa  4
+hashCode : -855429241 valore : sequence number 3439538055 numero copie 1
+hashCode : -855429758 valore : sequence number 3439537538 numero copie 1
+sequence : 3439538114 microsecondi -1869181115
+sequence : 3439537538 microsecondi -1869212040
+sequence : 3439538055 microsecondi -1869182194
+sequence : 3439537537 microsecondi -1869238707
+rto = 1202
+rto = 452
+192.168.1.10 - 216.58.198.14 - 53595 - 443
+Numero di sequnza del pacchetto arrivato 3311116613 il tempo di arrivo : Tue Jul 12 09:53:30 CEST 2016 , 1468310010 secondi 487984 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 3311116613 microsecondi -1869060944
+192.168.1.10 - 160.97.62.1 - 53597 - 443
+Numero di sequnza del pacchetto arrivato 3439538588 il tempo di arrivo : Tue Jul 12 09:53:30 CEST 2016 , 1468310010 secondi 714392 microsecondi
+% ripetizione : 0
+Size mappa  5
+hashCode : -855429241 valore : sequence number 3439538055 numero copie 1
+hashCode : -855429758 valore : sequence number 3439537538 numero copie 1
+sequence : 3439538588 microsecondi -1868834536
+sequence : 3439538114 microsecondi -1869181115
+sequence : 3439537538 microsecondi -1869212040
+sequence : 3439538055 microsecondi -1869182194
+sequence : 3439537537 microsecondi -1869238707
+rto = 1202
+rto = 452
+192.168.1.10 - 160.97.62.1 - 53597 - 443
+Numero di sequnza del pacchetto arrivato 3439538588 il tempo di arrivo : Tue Jul 12 09:53:30 CEST 2016 , 1468310010 secondi 718292 microsecondi
+% ripetizione : 0
+Size mappa  5
+hashCode : -855429241 valore : sequence number 3439538055 numero copie 1
+hashCode : -855429758 valore : sequence number 3439537538 numero copie 1
+sequence : 3439538588 microsecondi -1868830636
+sequence : 3439538114 microsecondi -1869181115
+sequence : 3439537538 microsecondi -1869212040
+sequence : 3439538055 microsecondi -1869182194
+sequence : 3439537537 microsecondi -1869238707
+rto = 1202
+rto = 452
+rtt = 3803
+numberSequenceDiCuiHoRicevutoACK = 3439538588
+192.168.1.10 - 160.97.62.1 - 53597 - 443
+Numero di sequnza del pacchetto arrivato 3439538588 il tempo di arrivo : Tue Jul 12 09:53:30 CEST 2016 , 1468310010 secondi 718651 microsecondi
+% ripetizione : 0
+Size mappa  5
+hashCode : -855429241 valore : sequence number 3439538055 numero copie 1
+hashCode : -855429758 valore : sequence number 3439537538 numero copie 1
+sequence : 3439538588 microsecondi -1868830277
+sequence : 3439538114 microsecondi -1869181115
+sequence : 3439537538 microsecondi -1869212040
+sequence : 3439538055 microsecondi -1869182194
+sequence : 3439537537 microsecondi -1869238707
+rto = 1202
+rto = 452
+rtt = 3803
+rtt = 305
+numberSequenceDiCuiHoRicevutoACK = 3439538588
+numberSequenceDiCuiHoRicevutoACK = 3439538588
+192.168.1.10 - 160.97.62.1 - 53597 - 443
+Numero di sequnza del pacchetto arrivato 3439538588 il tempo di arrivo : Tue Jul 12 09:53:30 CEST 2016 , 1468310010 secondi 718748 microsecondi
+% ripetizione : 0
+Size mappa  5
+hashCode : -855429241 valore : sequence number 3439538055 numero copie 1
+hashCode : -855429758 valore : sequence number 3439537538 numero copie 1
+sequence : 3439538588 microsecondi -1868830180
+sequence : 3439538114 microsecondi -1869181115
+sequence : 3439537538 microsecondi -1869212040
+sequence : 3439538055 microsecondi -1869182194
+sequence : 3439537537 microsecondi -1869238707
+rto = 1202
+rto = 452
+rtt = 3803
+rtt = 305
+rtt = 62
+numberSequenceDiCuiHoRicevutoACK = 3439538588
+numberSequenceDiCuiHoRicevutoACK = 3439538588
+numberSequenceDiCuiHoRicevutoACK = 3439538588
+192.168.1.10 - 160.97.62.1 - 53597 - 443
+Numero di sequnza del pacchetto arrivato 3439538588 il tempo di arrivo : Tue Jul 12 09:53:30 CEST 2016 , 1468310010 secondi 741683 microsecondi
+% ripetizione : 0
+Size mappa  5
+hashCode : -855429241 valore : sequence number 3439538055 numero copie 1
+hashCode : -855429758 valore : sequence number 3439537538 numero copie 1
+sequence : 3439538588 microsecondi -1868807245
+sequence : 3439538114 microsecondi -1869181115
+sequence : 3439537538 microsecondi -1869212040
+sequence : 3439538055 microsecondi -1869182194
+sequence : 3439537537 microsecondi -1869238707
+rto = 1202
+rto = 452
+rtt = 3803
+rtt = 305
+rtt = 62
+rtt = 22821
+numberSequenceDiCuiHoRicevutoACK = 3439538588
+numberSequenceDiCuiHoRicevutoACK = 3439538588
+numberSequenceDiCuiHoRicevutoACK = 3439538588
+numberSequenceDiCuiHoRicevutoACK = 3439538588
+192.168.1.10 - 23.221.198.100 - 53456 - 80
+Numero di sequnza del pacchetto arrivato 1307929526 il tempo di arrivo : Tue Jul 12 09:53:31 CEST 2016 , 1468310011 secondi 400040 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 1307929526 microsecondi -1868148888
+192.168.1.10 - 151.101.12.166 - 53461 - 80
+Numero di sequnza del pacchetto arrivato 472057260 il tempo di arrivo : Tue Jul 12 09:53:31 CEST 2016 , 1468310011 secondi 588057 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 472057260 microsecondi -1867960871
+192.168.1.10 - 37.252.166.209 - 53475 - 80
+Numero di sequnza del pacchetto arrivato 1674111459 il tempo di arrivo : Tue Jul 12 09:53:31 CEST 2016 , 1468310011 secondi 680054 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 1674111459 microsecondi -1867868874
+192.168.1.10 - 172.217.19.66 - 53433 - 80
+Numero di sequnza del pacchetto arrivato 3967059247 il tempo di arrivo : Tue Jul 12 09:53:31 CEST 2016 , 1468310011 secondi 870060 microsecondi
+% ripetizione : 0
+Size mappa  1
+sequence : 3967059247 microsecondi -1867678868
+192.168.1.10 - 62.67.193.75 - 53482 - 443
+Numero di sequnza del pacchetto arrivato 2017187070 il tempo di arrivo : Tue Jul 12 09:53:32 CEST 2016 , 1468310012 secondi 670137 microsecondi
+% ripetizione : 0
+Size mappa  1
+hashCode : 2017187070 valore : sequence number 2017187070 numero copie 1
+sequence : 2017187070 microsecondi -1911919410
+rto = 45040619
+192.168.1.10 - 31.13.86.4 - 53577 - 443
+Numero di sequnza del pacchetto arrivato 563415853 il tempo di arrivo : Tue Jul 12 09:53:34 CEST 2016 , 1468310014 secondi 70687 microsecondi
+% ripetizione : 0
+Size mappa  2
+sequence : 563415853 microsecondi -1865478241
+sequence : 563415852 microsecondi -1885637884
+192.168.1.10 - 31.13.86.4 - 53577 - 443
+Numero di sequnza del pacchetto arrivato 563415853 il tempo di arrivo : Tue Jul 12 09:53:34 CEST 2016 , 1468310014 secondi 71016 microsecondi
+% ripetizione : 0
+Size mappa  2
+sequence : 563415853 microsecondi -1865477912
+sequence : 563415852 microsecondi -1885637884
+192.168.1.10 - 31.13.86.4 - 53577 - 443
+Numero di sequnza del pacchetto arrivato 563415854 il tempo di arrivo : Tue Jul 12 09:53:34 CEST 2016 , 1468310014 secondi 71720 microsecondi
+% ripetizione : 0
+Size mappa  2
+sequence : 563415854 microsecondi -1865477208
+sequence : 563415852 microsecondi -1885637884
+rtt = 641
+numberSequenceDiCuiHoRicevutoACK = 563415853
+192.168.1.10 - 172.217.19.66 - 53376 - 80
+Numero di sequnza del pacchetto arrivato 3332136452 il tempo di arrivo : Tue Jul 12 09:53:36 CEST 2016 , 1468310016 secondi 220939 microsecondi
+% ripetizione : 0
+Size mappa  2
+sequence : 3332136451 microsecondi -1877507429
+sequence : 3332136452 microsecondi -1863327989
+192.168.1.10 - 172.217.19.66 - 53376 - 80
+Numero di sequnza del pacchetto arrivato 3332136452 il tempo di arrivo : Tue Jul 12 09:53:36 CEST 2016 , 1468310016 secondi 221141 microsecondi
+% ripetizione : 0
+Size mappa  2
+sequence : 3332136451 microsecondi -1877507429
+sequence : 3332136452 microsecondi -1863327787
+192.168.1.10 - 216.58.208.46 - 53371 - 443
+Numero di sequnza del pacchetto arrivato 2672514022 il tempo di arrivo : Tue Jul 12 09:53:38 CEST 2016 , 1468310018 secondi 250429 microsecondi
+% ripetizione : 0
+Size mappa  1
+hashCode : -1622453274 valore : sequence number 2672514022 numero copie 1
+sequence : 2672514022 microsecondi -1906479100
+rto = 45180601
+192.168.1.10 - 54.239.39.149 - 53369 - 443
+Numero di sequnza del pacchetto arrivato 3074850307 il tempo di arrivo : Tue Jul 12 09:53:38 CEST 2016 , 1468310018 secondi 760569 microsecondi
+% ripetizione : 0
+Size mappa  2
+sequence : 3074850306 microsecondi -1890447174
+sequence : 3074850307 microsecondi -1860788359
+192.168.1.10 - 54.239.39.149 - 53369 - 443
+Numero di sequnza del pacchetto arrivato 3074850308 il tempo di arrivo : Tue Jul 12 09:53:38 CEST 2016 , 1468310018 secondi 817386 microsecondi
+% ripetizione : 0
+Size mappa  3
+sequence : 3074850306 microsecondi -1890447174
+sequence : 3074850307 microsecondi -1860788359
+sequence : 3074850308 microsecondi -1860731542
+192.168.1.10 - 64.233.167.188 - 52975 - 5228
+Numero di sequnza del pacchetto arrivato 4103767228 il tempo di arrivo : Tue Jul 12 09:53:40 CEST 2016 , 1468310020 secondi 488584 microsecondi
+% ripetizione : 0
+Size mappa  1
+hashCode : -191200068 valore : sequence number 4103767228 numero copie 1
+sequence : 4103767228 microsecondi -1904404979
+rto = 45344635
+192.168.1.10 - 2.20.252.161 - 53384 - 80
+Numero di sequnza del pacchetto arrivato 2319919051 il tempo di arrivo : Tue Jul 12 09:53:41 CEST 2016 , 1468310021 secondi 240613 microsecondi
+% ripetizione : 0
+Size mappa  1
+hashCode : -1975048245 valore : sequence number 2319919051 numero copie 1
+sequence : 2319919051 microsecondi -1903337914
+rto = 45029599
+192.168.1.10 - 95.100.86.201 - 53385 - 80
+Numero di sequnza del pacchetto arrivato 1096165257 il tempo di arrivo : Tue Jul 12 09:53:41 CEST 2016 , 1468310021 secondi 638643 microsecondi
+% ripetizione : 0
+Size mappa  1
+hashCode : 1096165257 valore : sequence number 1096165257 numero copie 1
+sequence : 1096165257 microsecondi -1902934891
+rto = 45024606

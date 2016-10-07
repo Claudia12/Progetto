@@ -8,6 +8,7 @@ import java.util.Observer;
 import observer.IndicatoreRTO;
 import observer.IndicatoreRTT;
 import observer.IndicatoreRWin;
+import observer.IndicatoreRipetizione;
 import observer.IndicatoreTOTByte;
 import observer.Printer;
 
@@ -23,12 +24,16 @@ public class Connessione extends Observable
 		
 		this.AB = aB;
 		this.BA = bA;
-		//indicatori.add(new IndicatoreTOTByte());
+		
 		indicatori.add(new IndicatoreRTO());
+		//indicatori.add(new IndicatoreRWin());
+		indicatori.add(new IndicatoreRTT());
+	//	indicatori.add(new IndicatoreTOTByte());
+		indicatori.add(new IndicatoreRipetizione());
 		indicatori.add(new Printer());
-	//	indicatori.add(new IndicatoreRTT());
 	
-//		indicatori.add(new IndicatoreRipetizioni());
+	
+
 	}
 
 
@@ -45,10 +50,23 @@ public class Connessione extends Observable
 	@Override
 	public boolean equals(Object obj) 
 	{
+		if(obj==null || !(obj instanceof Connessione))
+		{
+		return false;
+		}
 	//	System.out.println("io vengo chiamato?");
 		Connessione cn=(Connessione)obj;
 		
 		return (this.AB.equals(cn.getAB()) && this.BA.equals(cn.getBA())) || (this.AB.equals(cn.getBA()) && this.BA.equals(cn.getAB()));
+	}
+
+
+	@Override
+	public String toString() 
+	{
+		String c="Connessione con Flusso AB "+ AB.toString() +" e Flusso BA "+BA.toString();
+		
+		return c;
 	}
 
 
