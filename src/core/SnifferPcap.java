@@ -1,42 +1,62 @@
 package core;
 
+import support.PacketHandler;
 import net.sourceforge.jpcap.capture.CaptureFileOpenException;
 import net.sourceforge.jpcap.capture.CapturePacketException;
 import net.sourceforge.jpcap.capture.PacketCapture;
-import net.sourceforge.jpcap.capture.PacketListener;
-import net.sourceforge.jpcap.net.Packet;
-
-public class SnifferPcap {
 
 
-	 private static final int INFINITE = -1;
-	  private static final int PACKET_COUNT = INFINITE; 
-	  /*
-	    private static final String HOST = "203.239.110.20";
-	    private static final String FILTER = 
-	      "host " + HOST + " and proto TCP and port 23";
-	  */
+public class SnifferPcap 
+{
 
-	  private static final String FILTER =  "";
-	   // "";
-	public static void main(String[] args) throws CaptureFileOpenException, CapturePacketException 
-	{
-		SnifferPcap sniffer = new SnifferPcap(null);
-	}
+
+	private static final int INFINITE = -1;
+	private static final int PACKET_COUNT = INFINITE; 
+	private static final String FILTER =  "";
+	
+	private String nomeFile="";
 
 	public SnifferPcap( String file) throws CaptureFileOpenException, CapturePacketException
-	  {
-	    // Initialize jpcap
-	    PacketCapture pcap = new PacketCapture();
-	    
-	    System.out.println("Using device file testo pcap'");
-	    pcap.openOffline("C:/Users/Claudia/Desktop/Tesi/wireshark1.pcap");
-	    
-	    pcap.addPacketListener(new PacketHandler());
+	{
+		// Initialize jpcap
+		PacketCapture pcap = new PacketCapture();
 
-	    System.out.println("Capturing packets...");
-	    pcap.capture(PACKET_COUNT);
-	  }
+		System.out.println("Using device file testo pcap'");
+		pcap.openOffline(file);
 
-//	}
+		PacketHandler ph =new PacketHandler();
+		ph.setNomeFile(nomeFile);
+		pcap.addPacketListener(ph);
+
+		System.out.println("Capturing packets...");
+		pcap.capture(PACKET_COUNT);
+	}
+	public SnifferPcap( String file,String fileOutput) throws CaptureFileOpenException, CapturePacketException
+	{
+		// Initialize jpcap
+		PacketCapture pcap = new PacketCapture();
+
+		System.out.println("Using device file testo pcap'");
+		pcap.openOffline(file);
+
+		PacketHandler ph =new PacketHandler();
+		ph.setNomeFile(fileOutput);
+		
+		pcap.addPacketListener(ph);
+
+		System.out.println("Capturing packets...");
+		pcap.capture(PACKET_COUNT);
+	}
+
+	public String getNomeFile() {
+		return nomeFile;
+	}
+
+	public void setNomeFile(String nomeFile)
+	{
+		if(this.nomeFile.equals(""))
+			{
+			this.nomeFile = nomeFile;
+			}
+	}
 }

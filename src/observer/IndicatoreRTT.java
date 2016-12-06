@@ -1,5 +1,7 @@
 package observer;
 
+import java.util.Iterator;
+import java.util.Map;
 import java.util.Observable;
 import java.util.Observer;
 
@@ -7,7 +9,9 @@ import net.sourceforge.jpcap.net.TCPPacket;
 import object.Connessione;
 import object.Flusso;
 import object.Host;
-import object.SequenceNumberObject;
+import object.StatisticaACK;
+import support.WriterCSV;
+
 
 public class IndicatoreRTT implements Observer{
 
@@ -15,70 +19,99 @@ public class IndicatoreRTT implements Observer{
 	@Override
 	public void update(Observable o, Object arg) 
 	{
-		System.out.println("SONO L'INDICATORE DI RTT ");
 		Connessione connessioneDaControllare=(Connessione)o;
-//		System.out.println(connessioneDaControllare.getAB().getNumberSequenceList().size());
-//		System.out.println(connessioneDaControllare.getBA().getNumberSequenceList().size());
-//		System.out.println(connessioneDaControllare.getAB().getA().getHostname());
-//		System.out.println(connessioneDaControllare.getAB().getB().getHostname());
-//		System.out.println(connessioneDaControllare.getBA().getA().getHostname());
-//		System.out.println(connessioneDaControllare.getBA().getB().getHostname());
 		TCPPacket pacchettoArrivato=(TCPPacket)arg;
-		
-//		System.out.println(pacchettoArrivato.getSequenceNumber());
 		Flusso flusso=new Flusso(new Host(pacchettoArrivato.getSourceAddress()),new Host(pacchettoArrivato.getDestinationAddress()),pacchettoArrivato.getSourcePort(),pacchettoArrivato.getDestinationPort());
-		//System.out.println(pacchettoArrivato.isAck());
-		System.out.println("A in questo caso è : "+pacchettoArrivato.getSourceAddress()+" B invece è : "+pacchettoArrivato.getDestinationAddress());
-		System.out.println("Il pacchetto arrivato è questo:  "+pacchettoArrivato.getSequenceNumber());
 		if(flusso.equals(connessioneDaControllare.getAB()) && pacchettoArrivato.isAck())
 		{
-			System.out.println("E' un ack");
-			check(connessioneDaControllare.getBA(), pacchettoArrivato);
+			check(connessioneDaControllare,connessioneDaControllare.getBA(), pacchettoArrivato);
 
 		}
-		
+
 		else if (flusso.equals(connessioneDaControllare.getBA()) && pacchettoArrivato.isAck())
 		{
-			System.out.println("E' un ack ");
-			check(connessioneDaControllare.getAB(), pacchettoArrivato);
+			check(connessioneDaControllare,connessioneDaControllare.getAB(), pacchettoArrivato);
 		}
-		  
-		else
+
+	}
+
+	private void check(Connessione connessioneDaControllare, Flusso f, TCPPacket p)
+	{
+		boolean pacchettoCorrispondenteTrovato=false;
+		long ackNumber=p.getAcknowledgementNumber();
+		double microInSecondi=(double)p.getTimeval().getMicroSeconds()/1000000;
+		double tempoArrivo= p.getTimeval().getSeconds()+ microInSecondi;
+	
+		if(f.getNumberSequenceMap().size()>0)
 		{
-			System.out.println("non devo fare nulla");
+			 Iterator it =f.getNumberSequenceMap().entrySet().iterator();
+			while(it.hasNext() && !pacchettoCorrispondenteTrovato)
+			{
+				Map.Entry entry = (Map.Entry)it.next();
+				long tmp=f.getNumberSequenceMap().get(entry.getKey()).getnSequ()+f.getNumberSequenceMap().get(entry.getKey()).getLen();
+				if(ackNumber==tmp)
+				{
+					pacchettoCorrispondenteTrovato=true;
+					double rtt=tempoArrivo-f.getNumberSequenceMap().get(entry.getKey()).getTempoArrivo();
+					f.getRttList().add(rtt);
+					new WriterCSV().writeInCSV(connessioneDaControllare, f, "RTT", rtt, tempoArrivo);
+					if(!presente(f.getNumberACKMap(),ackNumber,tempoArrivo))
+					{
+						StatisticaACK sa= new StatisticaACK(ackNumber, tempoArrivo);
+						f.getNumberACKMap().put(ackNumber,sa);
+					}
+				}
+			
+			}
+			
+		}
+		if(f.getNumberSequenceMapZero().size()>0 && !pacchettoCorrispondenteTrovato)
+		{
+			 Iterator it =f.getNumberSequenceMapZero().entrySet().iterator();
+				while(it.hasNext() && !pacchettoCorrispondenteTrovato)
+				{
+					Map.Entry entry = (Map.Entry)it.next();
+					long tmp=f.getNumberSequenceMapZero().get(entry.getKey()).getnSequ();
+					if(ackNumber==tmp+1)
+					{
+						pacchettoCorrispondenteTrovato=true;
+						double rtt=tempoArrivo-f.getNumberSequenceMapZero().get(entry.getKey()).getTempoArrivo();
+						f.getRttList().add(rtt);
+						new WriterCSV().writeInCSV(connessioneDaControllare, f, "RTT", rtt, tempoArrivo);
+						if(!presente(f.getNumberACKMap(),ackNumber,tempoArrivo))
+						{
+							StatisticaACK sa= new StatisticaACK(ackNumber, tempoArrivo);
+							f.getNumberACKMap().put(ackNumber,sa);
+						}
+						
+					}
+				
+				}
 		}
 		
-	
-    }
-	
-	private void check(Flusso f, TCPPacket p)
-	{
-		if(f.getNumberSequenceMap().containsKey(p.getAcknowledgementNumber()))
-		  {
-			System.out.println("ricevuto ack del paccheto : "+p.getAcknowledgementNumber());
-			int secondiInMicro=(int)p.getTimeval().getSeconds()*1000000;
-			System.out.println("secondi in micro cosa ne esce "+ secondiInMicro);
-			int tempoArrivo= secondiInMicro+p.getTimeval().getMicroSeconds();
-			System.out.println("totole : "+tempoArrivo);
-			 long rtt=tempoArrivo-f.getNumberSequenceMap().get(p.getAcknowledgementNumber());
-			 f.getRttList().add(rtt);
-			// f.getPacchettiDiCuiHoRicevutoACK().add(p.getAcknowledgementNumber());
-			 f.getNumberSequenceMap().remove(p.getAcknowledgementNumber());
-			 SequenceNumberObject s=new SequenceNumberObject(p.getAcknowledgementNumber());
-			 
-			 //f.getCopieDiNumberSequence().remove(s.hashCode());
-		  }
-		else
-		{
-			System.out.println("arrivato un ack ma non ho il pacchetto corrispondente");
-		}
-		//arrivato un ack ma non ho il pacchetto corrispondente
-		for(long l:f.getRttList())
-		{
-			System.out.println("rtt : "+l);
-		}
 	}
-	
+
+	private boolean presente(Map<Long, StatisticaACK> numberACKMap,long ackNumber, double tempoArrivo) 
+	{
+		boolean trovato=false;
+
+		 Iterator it =numberACKMap.entrySet().iterator();
+		 while(it.hasNext() && !trovato)
+			{
+			 Map.Entry entry = (Map.Entry)it.next();
+			 long ackTmp=numberACKMap.get(entry.getKey()).getnAck();
+			 if(ackNumber==ackTmp)
+				 	{
+				 		trovato=true;
+				 		StatisticaACK sa= new StatisticaACK(ackNumber, tempoArrivo);
+				 		numberACKMap.get(ackTmp).getListaDuplicatiACK().add(sa);
+				 	}
+			}
+		 
+		
+		return trovato;
+	}	
+
 }
 
 

@@ -7,17 +7,22 @@ import java.util.Observer;
 
 import observer.IndicatoreRTO;
 import observer.IndicatoreRTT;
-import observer.IndicatoreRWin;
+import observer.IndicatoreRWIN;
 import observer.IndicatoreRipetizione;
 import observer.IndicatoreTOTByte;
 import observer.Printer;
 
 public class Connessione extends Observable
 {
+	
+	private boolean attiva;
+	private int contatore;
+	
 	private Flusso AB;
 	private Flusso BA;
 	private boolean changed = false;
-	List<Observer> indicatori=new ArrayList<Observer>();
+	private List<Observer> indicatori=new ArrayList<Observer>();
+	private String nomeFile;
 	
 	public Connessione(Flusso aB, Flusso bA) 
 	{
@@ -26,13 +31,11 @@ public class Connessione extends Observable
 		this.BA = bA;
 		
 		indicatori.add(new IndicatoreRTO());
-		//indicatori.add(new IndicatoreRWin());
+		indicatori.add(new IndicatoreRWIN());
 		indicatori.add(new IndicatoreRTT());
-	//	indicatori.add(new IndicatoreTOTByte());
+		indicatori.add(new IndicatoreTOTByte());
 		indicatori.add(new IndicatoreRipetizione());
-		indicatori.add(new Printer());
-	
-	
+		//indicatori.add(new Printer());
 
 	}
 
@@ -54,7 +57,6 @@ public class Connessione extends Observable
 		{
 		return false;
 		}
-	//	System.out.println("io vengo chiamato?");
 		Connessione cn=(Connessione)obj;
 		
 		return (this.AB.equals(cn.getAB()) && this.BA.equals(cn.getBA())) || (this.AB.equals(cn.getBA()) && this.BA.equals(cn.getAB()));
@@ -78,7 +80,6 @@ public class Connessione extends Observable
 	public void setChanged(boolean changed,Object obj) 
 	{
 		this.changed = changed;
-		//System.out.println("qui");
 		this.notifyObservers(obj);
 	}
 
@@ -94,6 +95,17 @@ public class Connessione extends Observable
     	 i.update(this, arg);
      }
 	}
-	
+
+
+	public String getNomeFile() 
+	{
+		return nomeFile;
+	}
+
+
+	public void setNomeFile(String nomeFile)
+	{
+	this.nomeFile=nomeFile;
+	}
 	
 }
