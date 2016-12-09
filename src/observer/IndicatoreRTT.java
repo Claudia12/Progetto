@@ -93,23 +93,16 @@ public class IndicatoreRTT implements Observer{
 
 	private boolean presente(Map<Long, StatisticaACK> numberACKMap,long ackNumber, double tempoArrivo) 
 	{
-		boolean trovato=false;
-
-		 Iterator it =numberACKMap.entrySet().iterator();
-		 while(it.hasNext() && !trovato)
-			{
-			 Map.Entry entry = (Map.Entry)it.next();
-			 long ackTmp=numberACKMap.get(entry.getKey()).getnAck();
-			 if(ackNumber==ackTmp)
-				 	{
-				 		trovato=true;
-				 		StatisticaACK sa= new StatisticaACK(ackNumber, tempoArrivo);
-				 		numberACKMap.get(ackTmp).getListaDuplicatiACK().add(sa);
-				 	}
-			}
-		 
 		
-		return trovato;
+		if(numberACKMap.containsKey(ackNumber))
+		{
+			numberACKMap.get(ackNumber).getListaDuplicatiACK().add(new StatisticaACK(ackNumber, tempoArrivo));
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 	}	
 
 }
