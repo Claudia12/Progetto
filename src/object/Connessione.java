@@ -10,14 +10,10 @@ import observer.IndicatoreRTT;
 import observer.IndicatoreRWIN;
 import observer.IndicatoreRipetizione;
 import observer.IndicatoreTOTByte;
-import observer.Printer;
+
 
 public class Connessione extends Observable
-{
-	
-	private boolean attiva;
-	private int contatore;
-	
+{	
 	private Flusso AB;
 	private Flusso BA;
 	private boolean changed = false;
@@ -35,7 +31,6 @@ public class Connessione extends Observable
 		indicatori.add(new IndicatoreRTT());
 		indicatori.add(new IndicatoreTOTByte());
 		indicatori.add(new IndicatoreRipetizione());
-		//indicatori.add(new Printer());
 
 	}
 

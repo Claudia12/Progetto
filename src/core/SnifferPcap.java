@@ -12,8 +12,6 @@ public class SnifferPcap
 
 	private static final int INFINITE = -1;
 	private static final int PACKET_COUNT = INFINITE; 
-	private static final String FILTER =  "";
-	
 	private String nomeFile="";
 
 	public SnifferPcap( String file) throws CaptureFileOpenException, CapturePacketException

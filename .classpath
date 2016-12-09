@@ -3,7 +3,7 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.7.0_79"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Jpcap"/>
-	<classpathentry kind="lib" path="C:/Users/Claudia/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.IE5/UZLP4747/javacsv[1].jar"/>
+	<classpathentry kind="lib" path="C:/Users/Claudia/Desktop/Tesi/javacsv2.1/javacsv.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Commons CLI"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
