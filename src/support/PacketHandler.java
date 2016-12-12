@@ -1,8 +1,6 @@
 package support;
 
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.PrintStream;
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -21,24 +19,7 @@ public class PacketHandler implements PacketListener
 	private DateFormat df = new SimpleDateFormat("yyyy-MM-dd_HH.mm.ss");
 	List<Connessione> connessioni= new ArrayList<Connessione>();
 	private String nomeFile=df.format(new Date()) +"_Statistics.csv";
-	private String nomeFile2=df.format(new Date()) +"_Flussi.txt";
-	
-	FileOutputStream file;
-	PrintStream outfile;
-	
-	public PacketHandler()
-	{
-			try {
-				file=new FileOutputStream(nomeFile2, true);
-			} catch (FileNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			outfile=new PrintStream(file);
-		
-		
-	}
-	
+
 	@Override
 	public void packetArrived(Packet packet)
 	{
@@ -46,22 +27,25 @@ public class PacketHandler implements PacketListener
 		if(packet instanceof TCPPacket)
 		{
 			TCPPacket tcpPacket=(TCPPacket) packet;
-			Connessione tmp=new Connessione(new Flusso(new Host(tcpPacket.getSourceAddress()),new Host(tcpPacket.getDestinationAddress()),tcpPacket.getSourcePort(),tcpPacket.getDestinationPort()),new Flusso(new Host(tcpPacket.getDestinationAddress()),new Host(tcpPacket.getSourceAddress()),tcpPacket.getDestinationPort(),tcpPacket.getSourcePort()));
-			if(connessioni.contains(tmp))//(connessioneDaVericare.equals(tmp))//
+			Host A = new Host(tcpPacket.getSourceAddress());
+			Host B = new Host(tcpPacket.getDestinationAddress());
+			int portaA=tcpPacket.getSourcePort();
+			int portaB=tcpPacket.getDestinationPort();
+			
+			Flusso AB=new Flusso(A,B,portaA,portaB);
+			Flusso BA=new Flusso(B,A,portaB,portaA);
+			Connessione tmp=new Connessione(AB,BA);
+			if(connessioni.contains(tmp))
 			{
 				int pos=connessioni.indexOf(tmp);
 				connessioni.get(pos).setChanged(true, tcpPacket);
 
 			}
-			else //vuol dire che è una nuova connessione trovata percio l aggiungo alla lista e poi faccio tutto cio che ho fatto sopra
+			else
 			{	
 				tmp.setNomeFile(nomeFile);
 				tmp.setChanged(true, tcpPacket);
-				connessioni.add(tmp);
-				outfile.print(tmp.getAB().IDFlusso());
-				outfile.println();
-				outfile.flush();
-				
+				connessioni.add(tmp);				
 			}
 		}
 		
